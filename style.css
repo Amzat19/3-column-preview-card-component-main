@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    max-height: 1050px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contents {
+    display: flex;
+    align-items: row;
+    height: 500px;
+    width: 900px;
+    padding: 1.5rem;
+}
+
+.Sedan-box {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.Suv-box {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury-box {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+img, h2, p, .Click {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    font-family: Big Shoulders Display, sans-serif;
+}
+p {
+    font-family: Lexend Deca, sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    line-height: 1.8;
+}
+button {
+    padding: 10px 40px 10px 40px;
+    border-radius: 25px;
+    border-color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    
+}
+.sedan-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+}
+.suv-button {
+    color: hsl(184, 100%, 22%)
+}
+.suv-button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-button {
+    color: hsl(179, 100%, 13%);
+}
+.luxury-button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 425px) {
+    .contents {
+        display: grid;
+        align-items: column;
+        width: 350px;
+    }
+    .Sedan-box {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .Luxury-box {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+}
